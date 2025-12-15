@@ -2,13 +2,10 @@ import java.util.Scanner;
 
 public class AreaCalculator {
 
-    // Method to calculate the area of a rectangle (takes two float parameters: length, width)
     public float area(float length, float width) {
         return length * width;
     }
 
-    // Method to calculate the area of a triangle (takes two double parameters: base, height)
-    // The method name is the same, but the parameter types/signature are different
     public double area(double base, double height) {
         return (0.5 * base * height);
     }
@@ -17,20 +14,19 @@ public class AreaCalculator {
         AreaCalculator calculator = new AreaCalculator();
         Scanner scanner = new Scanner(System.in);
 
-        // Calculate Area of Rectangle
         System.out.println("Enter the length of the rectangle:");
         float rectLength = scanner.nextFloat();
         System.out.println("Enter the width of the rectangle:");
         float rectWidth = scanner.nextFloat();
-        // Calls the area(float, float) method
+        
         System.out.println("Area of Rectangle: " + calculator.area(rectLength, rectWidth) + " sq units\n");
 
-        // Calculate Area of Triangle
+      
         System.out.println("Enter the base of the triangle:");
         double triBase = scanner.nextDouble();
         System.out.println("Enter the height of the triangle:");
         double triHeight = scanner.nextDouble();
-        // Calls the area(double, double) method
+       
         System.out.println("Area of Triangle: " + calculator.area(triBase, triHeight) + " sq units\n");
 
         scanner.close();
